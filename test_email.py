@@ -1,15 +1,16 @@
+import os
 import smtplib
 from email.mime.text import MIMEText
 
-# change these
-FROM_EMAIL = "yourgmail@gmail.com"   # your Gmail
-TO_EMAIL = "yourgmail@gmail.com"     # can send to yourself for testing
-APP_PASSWORD = "your-16-digit-app-password"  # paste the app password here
+# Pull secrets from environment variables (set in GitHub Actions)
+FROM_EMAIL = os.getenv("EMAIL_USER")
+TO_EMAIL = os.getenv("EMAIL_USER")  # send to yourself for testing
+APP_PASSWORD = os.getenv("EMAIL_PASS")
 
 def send_test_email():
     subject = "✅ Test Email from Python"
-    body = "Hey! This is a test email sent using Gmail + Python + App Password."
-    
+    body = "Hey! This is a test email sent using Gmail + GitHub Actions + App Password."
+
     msg = MIMEText(body, "plain")
     msg["Subject"] = subject
     msg["From"] = FROM_EMAIL
