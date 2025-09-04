@@ -1,0 +1,4 @@
+Capgemini||[Page match] Capgemini Careers||https://www.capgemini.com/careers/
+Zensar||Data engineering and analytics||https://www.zensar.com/services/data-engineering-and-analytics/
+Zensar||Data engineering||https://www.zensar.com/services/data-engineering-and-analytics/data-engineering/
+Zensar||[Page match] Zensar Careers||https://www.zensar.com/careers
